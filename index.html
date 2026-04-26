@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexMobi | Premium Mobile Marketplace</title>
+    <meta name="description"
+        content="Buy, sell, and upgrade your smartphone with NexMobi. The premier platform for premium mobile devices.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="dynamic-bg"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Nex<span>Mobi</span><span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#sell">Sell</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="loginBtn">Log In</button>
+                <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobileToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content" data-reveal="left">
+                <div class="badge-pill">
+                    <span class="pulse"></span> Certified Quality Devices
+                </div>
+                <h1 class="hero-title">Experience the <br><span class="gradient-text">Future</span> in your hands.</h1>
+                <p class="hero-description">The ultimate marketplace to buy and sell premium smartphones. Impeccable
+                    condition, unbeatable prices.</p>
+                <div class="hero-cta">
+                    <a href="#shop" class="btn btn-primary btn-large glow-btn">Explore Phones</a>
+                    <a href="#sell" class="btn btn-glass btn-large">Sell Your Device</a>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">50k+</h3>
+                        <p class="stat-label">Happy Users</p>
+                    </div>
+                    <div class="stat-item separator"></div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">12k+</h3>
+                        <p class="stat-label">Devices Sold</p>
+                    </div>
+                    <div class="stat-item separator"></div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">4.9/5</h3>
+                        <p class="stat-label">Avg Rating</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-reveal="right">
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+                <div class="phone-wrapper" id="heroPhoneWrapper">
+                    <img src="assets/hero_phone.png" alt="Premium Smartphone" class="floating-phone" id="heroPhone">
+                </div>
+                <div class="glass-float-card price-tag" data-speed="2.0">
+                    <span class="tag-label">Pro Max 1TB</span>
+                    <strong class="tag-value">$1,199</strong>
+                </div>
+                <div class="glass-float-card condition-tag" data-speed="-1.0">
+                    <span class="tag-icon">💫</span>
+                    <span class="tag-label">Mint Condition</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="section-header" data-reveal="up">
+                <h2>Why Choose <span class="gradient-text">NexMobi</span></h2>
+                <p>The smartest way to upgrade your mobile life.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-panel" data-reveal="up" data-delay="0.1">
+                    <div class="feature-icon icon-blue"></div>
+                    <h3>Certified Refurbished</h3>
+                    <p>Every device passes a rigorous 90-point inspection by our expert technicians ensuring perfect
+                        functionality.</p>
+                </div>
+                <div class="feature-card glass-panel" data-reveal="up" data-delay="0.2">
+                    <div class="feature-icon icon-purple"></div>
+                    <h3>1-Year Warranty</h3>
+                    <p>Peace of mind with comprehensive coverage on all purchased devices against manufacturing defects.
+                    </p>
+                </div>
+                <div class="feature-card glass-panel" data-reveal="up" data-delay="0.3">
+                    <div class="feature-icon icon-green"></div>
+                    <h3>Instant Payouts</h3>
+                    <p>Get paid on the spot when you sell your device. No waiting, no hassle, just immediate cash.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="trending-section">
+            <div class="section-header" data-reveal="up">
+                <h2>Trending <span class="gradient-text">Devices</span></h2>
+                <p>Top models everyone is talking about.</p>
+            </div>
+            <div class="products-container" id="productsGrid">
+                <!-- Cards will have 3D tilt JS applied -->
+                <div class="product-card glass-panel tilt-card" data-reveal="up" data-delay="0.1">
+                    <div class="product-badge">🔥 Hot</div>
+                    <div class="product-image-container">
+                        <img src="assets/premium_phone.png" alt="Titanium Pro" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Titanium Series</div>
+                        <h3 class="product-name">X-Pro Max Titanium</h3>
+                        <div class="product-specs">
+                            <span>256GB</span> • <span>Excellent</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$989</span>
+                            <span class="old-price">$1,199</span>
+                        </div>
+                        <button class="btn btn-primary w-100 glow-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card glass-panel tilt-card" data-reveal="up" data-delay="0.2">
+                    <div class="product-badge blue">✨ New</div>
+                    <div class="product-image-container">
+                        <img src="assets/foldable_phone.png" alt="Fold Z" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Galaxy Tech</div>
+                        <h3 class="product-name">Fold Z Horizon</h3>
+                        <div class="product-specs">
+                            <span>512GB</span> • <span>Like New</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$1,249</span>
+                            <span class="old-price">$1,599</span>
+                        </div>
+                        <button class="btn btn-primary w-100 glow-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card glass-panel tilt-card" data-reveal="up" data-delay="0.3">
+                    <div class="product-image-container">
+                        <img src="assets/gaming_phone.png" alt="Gaming Phone" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">ROGUE Space</div>
+                        <h3 class="product-name">Phantom Gaming G9</h3>
+                        <div class="product-specs">
+                            <span>1TB</span> • <span>Very Good</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$849</span>
+                            <span class="old-price">$999</span>
+                        </div>
+                        <button class="btn btn-primary w-100 glow-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="bottom-cta" data-reveal="zoom">
+            <div class="cta-banner glass-panel">
+                <div class="cta-content">
+                    <h2>Ready for an <span class="gradient-text">Upgrade?</span></h2>
+                    <p>Sell your old device today and get an extra 10% bonus credit towards your next purchase.</p>
+                    <button class="btn btn-primary btn-large glow-btn">Get Estimate Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Nex<span>Mobi</span><span class="dot">.</span></a>
+                <p>The premium mobile marketplace for the modern era. Join the revolution in tech exchange.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Shop</h4>
+                    <a href="#">iPhones</a>
+                    <a href="#">Androids</a>
+                    <a href="#">Tablets</a>
+                    <a href="#">Accessories</a>
+                </div>
+                <div class="link-group">
+                    <h4>Sell</h4>
+                    <a href="#">How it works</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Drop-off points</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Support</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> NexMobi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
